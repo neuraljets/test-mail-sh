@@ -31,7 +31,8 @@ if [ ! -f "$RECIPIENTS_FILE" ]; then
 fi
 
 # Read recipients from the file and send emails
-while IFS= read -r RECIPIENT; do
+while IFS= read -r RECIPIENT || [[ -n "$RECIPIENT" ]]; do
+    RECIPIENT=$(echo "$RECIPIENT" | xargs) # Trim whitespace
     if [[ -n "$RECIPIENT" ]]; then
         echo "Sending email to $RECIPIENT..."
 
