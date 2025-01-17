@@ -2,7 +2,7 @@
 
 A simple Bash script to send a test email using SWAKS.
 
-It reads the body and recipients from files.
+It reads the body and recipients from files. The body file should contain the email body, and the recipients file should contain a list of email addresses, one per line.
 
 It sends the email using the SMTP server, username, and password provided.
 
