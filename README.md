@@ -24,17 +24,17 @@ sudo zypper install swaks # OpenSUSE
 Make sure the script is executable.
 
 ```bash
-chmod +x test-mail.sh
+chmod +x test_mail.sh
 ```
 
 ## Usage
 
 ```bash
-./test-mail.sh <SMTP_SERVER> <USERNAME> <PASSWORD> <FROM_EMAIL> <SUBJECT> <BODY_FILE> <RECIPIENTS_FILE>
+./test_mail.sh <SMTP_SERVER> <USERNAME> <PASSWORD> <FROM_EMAIL> <SUBJECT> <BODY_FILE> <RECIPIENTS_FILE>
 ```
 
 ## Example
 
 ```bash
-./test-mail.sh send.c.mxascen.com foo@bar.com 'password' foo@bar.com 'Test Email' body.txt recipients.txt
+./test_mail.sh send.c.mxascen.com foo@bar.com 'password' foo@bar.com 'Test Email' body.txt recipients.txt
 ```
